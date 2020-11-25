@@ -1,0 +1,356 @@
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+/* TEST */
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 3rem; */
+    animation: toggleIn 4s;
+  }
+  
+  .mode {
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  margin-right: 8px;
+  color: white;
+  }
+  
+  .dark-mode {
+    margin: 0 5em;
+  }
+  @keyframes toggleIn {
+     0% {opacity: 0}
+     100% {opacity: 1}
+      }
+  
+  .switch {
+     position: relative;
+     display: inline-block;
+     width: 120px;
+     height: 42px;
+     background-color: white;
+     border-radius: 20px;
+     border: .2em;
+     cursor: pointer;
+  }
+  
+  .switch::after {
+    content: '\2600';
+    font-size: 30px;
+    position: absolute;
+    color: orangered;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    top: 56%;
+    left: 20%;
+    transition: all 0.2s;
+  }
+  
+  .checkbox:checked + .switch::after {
+    /* transform: rotate(15deg); */
+    left: 100px;
+    content:  "\263E";
+    color:  yellow;
+    height: 42px;
+    width: 42px;
+    /* transform: rotate(15deg); */
+    
+  }
+  
+  .checkbox:checked + .switch {
+    background-color: #000000;
+  }
+  
+  .checkbox {
+    display: none;
+  }
+  
+  .checkbox:checked + .switch .on {
+    display: block;
+  }
+  
+  .on {
+    display: none;
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 25px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+.dark {
+    background-color: #7A0202!important;
+}
+.dark .bg-danger {
+    background-color: #cca60d!important;
+    color: white;
+}
+
+.dark .container,
+.dark .nav-item {
+    color: black!important;
+}
+
+
+.dark .jumbotron {
+  background-color:  #7A0202!important;
+  color: white!important;
+}
+
+ .dark .mode {
+  color: black;
+}
+.dark h1 {
+  color: rgba(255,255,255, .8)!important;
+}
+.dark h2 {
+  color: rgba(255,255,255,.8)!important;
+}
+.dark h3 {
+  color: rgba(255,255,255,.8)!important;
+}
+
+
+/* Filmstrip SVG */
+
+svg {
+  width:  50%;
+
+}
+
+.jumbotron {
+  position: relative;
+  /* min-height: 80vh; */
+}
+
+#about {
+  background-color: #cca60d;
+  padding: 30px 0;
+  text-align: left;
+}
+
+#about i.fa {
+  padding: 25px 0;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+}
+.dark  #about {
+  background-color: olive;
+}
+
+/* new filmstrip Brian's CSS */
+
+    @keyframes offset {
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fill-it {
+      100% {
+        fill: dodgerblue;
+      }
+    }
+
+    /* Filmstrip SVG */
+    svg {
+      display: block;
+      margin: auto;
+      width: 60%;
+    }
+
+    .filmstrip {
+      stroke: dodgerblue;
+      stroke-width: 1;
+      stroke-dasharray: 1190;
+      stroke-dashoffset: 1190;
+      animation: offset 4s linear forwards, fill-it 0.5s 4s forwards;
+    }
+
+/* end of filmstrip */
+
+/* typing */
+
+h2.typing {
+  margin: auto;
+  font-size: 2rem;
+  animation: type 3s steps(27);
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  text-align: center!important;
+  white-space: nowrap;
+  font-family: 'Courier New', Courier, monospace;
+  width: 0ch;
+ }
+
+ @keyframes type {
+    0% {
+      width: 0ch;
+      border-right: 4px solid black;
+    }
+    100% {
+      width: 28ch;
+      border-right: 4px solid black;
+    }
+ }
+/* typing */
+
+
+.arrow {
+  font-size: 80px;
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  transition: all 200ms ease-in-out;
+}
+
+.down-arrow {
+  
+  text-align: center;
+  color: dodgerblue;
+  border-bottom: 3px solid white;
+  width: 90px;
+  margin: auto;
+  margin-top: 120px;
+  /* position: absolute; */
+  /* position: relative; */
+  /* bottom: 60px; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+}
+.dark .arrow {
+  color: rgba(255,255,255, .8)
+
+}
+@keyframes bounce {
+  0%{transform: translateY(0);}
+  50%{transform: translateY(-50px);}
+  100%{transform: translateY(0);}
+}
+
+#story-icon {
+  border: none;
+  justify-items: center;
+}
+
+.fa-paper-plane-o  {
+  color: #dc3545;
+  font-size: 80px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.fa-film {
+  color: #dc3545;
+  font-size: 80px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+ 
+}
+
+.card {
+  background-color: #F5F5F5;
+  margin: auto;
+  padding-bottom: 2rem;
+  box-shadow: 5px 5px 5px #999;
+}
+
+.card-text {
+  text-align: left;
+}
+
+
+/* icons */
+
+
+/* contact section */
+
+.contact {
+  background-color: #cca60d;
+}
+
+/* social media and copyright */
+
+.social-group > div {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+.social-group img {
+  height: 38px;
+  width: 38px;
+  fill: red;
+}
+
+.copyright {
+  font-size: 20px;
+  margin-top: 2rem;
+  color: dodgerblue;
+}
+
+
+
+/* dark mode */
+  
+
+.dark {
+  background-color: #7A0202!important;
+}
+.dark .bg-danger {
+  background-color: #cca60d!important;
+  color: white;
+}
+/* scroll spy for dark mode */
+
+  .dark a.active {
+  color: red !important;
+}
+
+/* /dark-mode scroll spy */
+
+.dark .container,
+.dark .nav-item {
+  color: black!important;
+}
+
+.dark .jumbotron {
+background-color:  #7A0202!important;
+color: white!important;
+}
+
+.dark .mode {
+color: black;
+}
+.dark h1 {
+color: rgba(255,255,255, .8)!important;
+}
+.dark h2 {
+color: rgba(255,255,255,.8)!important;
+}
+.dark h3 {
+color: rgba(255,255,255,.8)!important;
+}
+
+
+.dark .card {
+  background-color: olive;
+}
+
+.dark .card-text {
+  color: #f5f5f5;
+}
+
+.dark h5 {
+  color: white!important;
+}
+
