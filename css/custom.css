@@ -38,7 +38,9 @@ h1, h2, h3 {
   color:  black;
   font-size: 2rem;
 }
-
+h1#portfolio {
+  font-size: 34px;
+}
 /* svg {
   width: 50%;
   align: center;

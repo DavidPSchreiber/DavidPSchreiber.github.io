@@ -89,7 +89,7 @@ body {
     background-color: #7A0202!important;
 }
 .dark .bg-danger {
-    background-color: #cca60d!important;
+    background-color: #7A0202!important;
     color: white;
 }
 
@@ -100,7 +100,7 @@ body {
 
 
 .dark .jumbotron {
-  background-color:  #7A0202!important;
+  background-color:  dodgerblue!important;
   color: white!important;
 }
 
@@ -116,6 +116,10 @@ body {
 .dark h3 {
   color: rgba(255,255,255,.8)!important;
 }
+ .dark .card-body-font {
+   color: #FFC107!important;
+ }
+
 
 
 /* Filmstrip SVG */
@@ -328,6 +332,9 @@ background-color:  #7A0202!important;
 color: white!important;
 }
 
+.dark .skills {
+  background-color: #7A0202!important;
+}
 .dark .mode {
 color: black;
 }
