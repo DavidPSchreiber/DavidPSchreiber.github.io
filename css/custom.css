@@ -9,11 +9,15 @@
 .navbar img {
   width: 82px;
   height: auto;
+  margin-left: 12px;
   /* padding-bottom: 25px; */
   border-radius: 50%;
   box-shadow: 0 0 40px #ffc107;
-  
-}
+  }
+
+  .navbar-toggler-icon {
+    margin-left: 12px;
+  }
 /* per Brian */
 
 a.active {
@@ -26,7 +30,7 @@ a.active {
   height: 140px;
   border-radius: 50%;
   align-content: center;
-  /* box-shadow: 0 0 40px #ffc107; */
+
 }
 body {
   position: relative;
@@ -115,12 +119,8 @@ h1#portfolio {
   }
 }
 
-
-
 @media screen and (min-width: 768px) {
-  /* .dark-mode {
-    margin: 0 5em;
-  } */
+
   .display-1, .dark h1 {
     font-size: 6rem;
   }
@@ -133,6 +133,4 @@ h1#portfolio {
   .img {
     min-width: 5rem;
   }
-
 }
-
