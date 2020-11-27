@@ -109,7 +109,9 @@ h1#portfolio {
   }
   .btn-group .btn {
     margin-bottom: 10px;
-  }
+    padding-left: 1rem;
+   
+      }
   .btn-group {
     display: flex;
     flex-direction: column;
@@ -133,4 +135,10 @@ h1#portfolio {
   .img {
     min-width: 5rem;
   }
+  .btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+ 
 }
