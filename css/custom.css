@@ -9,11 +9,15 @@
 .navbar img {
   width: 82px;
   height: auto;
+  margin-left: 12px;
   /* padding-bottom: 25px; */
   border-radius: 50%;
   box-shadow: 0 0 40px #ffc107;
-  
-}
+  }
+
+  .navbar-toggler-icon {
+    margin-left: 12px;
+  }
 /* per Brian */
 
 a.active {
@@ -26,7 +30,7 @@ a.active {
   height: 140px;
   border-radius: 50%;
   align-content: center;
-  /* box-shadow: 0 0 40px #ffc107; */
+
 }
 body {
   position: relative;
@@ -39,7 +43,7 @@ h1, h2, h3 {
   font-size: 2rem;
 }
 h1#portfolio {
-  font-size: 34px;
+  font-size: 30px;
 }
 /* svg {
   width: 50%;
@@ -52,7 +56,7 @@ h1#portfolio {
 }
 
 #about p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #resume {
@@ -105,6 +109,11 @@ h1#portfolio {
   }
   .btn-group .btn {
     margin-bottom: 10px;
+    padding-left: 1rem;
+   
+ 
+    border-radius: 5px !important;
+   
   }
   .btn-group {
     display: flex;
@@ -115,12 +124,8 @@ h1#portfolio {
   }
 }
 
-
-
 @media screen and (min-width: 768px) {
-  /* .dark-mode {
-    margin: 0 5em;
-  } */
+
   .display-1, .dark h1 {
     font-size: 6rem;
   }
@@ -134,5 +139,23 @@ h1#portfolio {
     min-width: 5rem;
   }
 
-}
+  .btn-group .btn {
+    margin-bottom: 10px;
+    padding-left: 1rem;
+    /* border-radius: 0px !important; */
+   
+  }  
+  
+  .btn-group .btn {
+    border-radius: 0px 5px 5px 0px !important;
+  }
 
+  .btn-group .btn:first-of-type {
+    border-radius: 5px 0px 0px 5px !important;
+  }
+  .btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+ }
