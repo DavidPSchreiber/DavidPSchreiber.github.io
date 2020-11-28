@@ -17,7 +17,7 @@ document.querySelector('#toggle').addEventListener
     document.body.classList.toggle('dark');
     console.log(e.target.checked);
     window.localStorage.setItem("darkmode", e.target.checked);
-})
+});
 
 
 var videos = $('.card');
